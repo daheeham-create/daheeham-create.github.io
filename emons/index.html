@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index0</title>
+    <style>
+     *{margin:0; padding:0; box-sizing: border-box;}
+     body{background-color:gainsboro; font-family:'Noto Sans KR', sans-serif; /*글꼴 고딕체*/
+    color:black; line-height:1.6;} /*줄간격 1.6배수*/
+    img{width:100%; display:block;} /*여백 높이 너비 적용*/
+    a{text-decoration:none; color:gray}
+    header{width:100%; background-color:rgba(220,220,220,0.8); position:fixed; left:0; top:0}
+    .logo{margin:50;}
+    .logo img{height:70px; width:auto; display:block;}
+    .header-inner{display:flex; justify-content:space-between; /*양끝*/
+      align-items:center;/*세로*/ padding:10px 8%}
+    nav a{margin-left:40px; font-size:17px; font-weight:bold;}
+    main{height:100vh; margin-top:70px; background:url(img/main.png) no-repeat center/cover;}
+    section{padding:130px 5%;}
+    section h1{text-align:center; margin-bottom:30px;
+               border-bottom:2px solid darkgray;}
+    .new,.best,.event{display:flex; gap:30px;}
+    .new-item,.best-item{width:50%;}
+    .event-item{width:32%;}
+    .new-item img,.best-item img{border-radius:20px;}
+    .product-list{display:flex; flex-wrap:wrap; gap:30px;}
+    .three{display:flex; gap:30px; width:60%; margin:0 auto;}
+    .left{width:105%;}
+    .right{width:50%; display:flex; gap:30px; flex-direction:column;}
+    footer {
+            background: #1a1a1a;
+            color: white;
+            padding: 40px 50px;
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            gap: 50px;
+        }
+
+        .footer-item {
+            flex: 1;
+            min-width: 200px;
+        }
+
+        .footer-item h1{
+            margin-bottom: 15px;
+        }
+        .footer-item h3{
+            margin-bottom: 30px;
+        }
+
+        .footer-item a {
+            display: block;
+            color: #888;
+            text-decoration: none;
+            margin-bottom: 8px;
+        }
+
+        footer .copy {
+            width: 100%;
+            text-align: center;
+            margin-top: 30px;
+            color: #777;
+            font-size: 13px;
+        }
+
+  </style>
+</head>
+
+<body>
+  <header>
+<div class="header-inner"> <!--큰박스-->
+  <div class="logo">
+  <a href="index.html"> <!--첫페이지 파일명-->
+    <img src="img/logo.png" alt="logo.png">
+  </a>
+  </div>
+  <nav>
+    <a href="#">전체제품</a> <a href="#"> 기업소개 </a>
+    <a href="#"> 브랜드스토리</a> <a href="#"> 포토리뷰 </a>
+    <a href="#"> 고객센터 </a>
+  </nav>
+  </div>
+  </header>
+  
+<main></main>
+<section class="sec1">
+  <h1>NEW</h1>
+  <div class="new">
+    <div class="new-item"><img src="img/new-1.jpg"></div>
+    <div class="new-item"><img src="img/new-2.jpg"></div>
+    <div class="new-item"><img src="img/new-3.jpg"></div>
+    <div class="new-item"><img src="img/new-4.jpg"></div>
+  </div>
+</section>
+
+<section class="sec2">
+  <h1>BEST</h1>
+  <div class="best">
+    <div class="best-item"><img src="img/best-1.jpg"></div>
+    <div class="best-item"><img src="img/best-2.jpg"></div>
+    <div class="best-item"><img src="img/best-3.jpg"></div>
+    <div class="best-item"><img src="img/best-4.jpg"></div>
+  </div>
+</section>
+
+<section class="sec3">
+<div class="three">
+<div class="left"><img src="img/left1.png"></div>
+<div class="right">
+  <div class="right-box"><img src="img/right1.png"></div>
+   <div class="right-box"><img src="img/right2.png"></div>
+</div>
+</div>  
+</section>
+
+<section class="sec4">
+<h1>EVENT</h1>
+<div class="event">
+<div class="event-item"><img src="img/event-1.jpg"></div>
+<div class="event-item"><img src="img/event-2.jpg"></div>
+<div class="event-item"><img src="img/event-3.png"></div>
+</div>
+</section>
+
+<footer>
+<div class="footer-content">
+ <div class="footer-item">
+  <h1>Emons</h1>
+    <a href="#"><b>제휴/제안문의 &nbsp; 대리점개설문의 &nbsp; 이용약관 &nbsp; 개인정보취급방침 &nbsp; 고객센터</b></a>
+    <a href="#">상호명:에몬스  대표:김경수  주소:(21629) 인천광역시 남동구 논현고잔로 47(고잔동 740-3)
+    <br>E-MAIL:webmaster@emons.co.kr</a>
+    <a href="#">사업자등록번호:139-81-32740  통신판매업신고번호:20074-인천남동구0164</a>
+ </div>
+
+ <div class="footer-item">
+  <h3>고객센터 1800-9977</h3>
+   <a href="#">수신자 부담전화:</a>
+   <a href="#">에몬스고객센터 080-272-2233  인천본사전시장 032-811-0111</a>
+   <a href="#">에몬스몰고객센터 080-800-8011  대리점개설문의 032-250-0125</a>
+ </div>
+</div>
+
+ <div class="copy"><p>COPYRIGHT © EMONS FURNITURE CO., LTD. ALL RIGHTS RESERVED.</p></div>
+</footer>
+</body>
+</html>
