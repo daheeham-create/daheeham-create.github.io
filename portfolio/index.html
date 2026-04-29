@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> 포트폴리오 </title>
+    <link rel="stylesheet" href="style.css">
+ </head>
+  <body>
+    <main id="home">
+      <header>
+        <div class="head">
+          <div class="logo"><a href="#home">PORTFOLIO</a></div>
+          <nav>
+            <ul>
+              <li><a href="#home"> Home </a></li>
+              <li><a href="#about"> About </a></li>
+              <li><a href="#project1"> Portfolio I</a></li>
+              <li><a href="#project2"> Portfolio II</a></li>
+              <li><a href="#contact"> Contact </a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+    
+    </main>
+
+    <section id="about">
+      <h2 class="title">About</h2>
+      <div><img src="img/about.jpg" /></div>
+    </section>
+
+   <!-- 프로젝트 섹션 -->
+  <section id="project1">
+    <h2 class="title">Design Edit</h2>
+    <div class="gallery">
+      <div class="box" onclick="openModal('project1')">
+        <img src="img/box1.jpg" alt="프로젝트 1" class="thumbnail">
+        <p> Poster </p>
+      </div>
+      <div class="box" onclick="openModal('project2')">
+        <img src="img/box2.jpg" alt="프로젝트 2" class="thumbnail">
+        <p> Leaflet </p>
+      </div>
+      <div class="box" onclick="openModal('project3')">
+       <img src="img/box3.jpg" alt="프로젝트 3" class="thumbnail">
+       <p> Logo </p>
+      </div>
+      <div class="box" onclick="openModal('project4')">
+        <img src="img/box4.jpg" alt="프로젝트 4" class="thumbnail"> 
+         <p> Company magazine </p>
+      </div>
+      <div class="box" onclick="openModal('project5')">
+        <img src="img/box5.jpg" alt="프로젝트 5" class="thumbnail">
+         <p> SNS banner </p>
+      </div>
+      <div class="box" onclick="openModal('project6')">
+        <img src="img/box6.jpg" alt="프로젝트 6" class="thumbnail">
+         <p> Detail page </p>
+      </div>
+     </div>
+  </section>
+  
+  <!-- 프로젝트 섹션 2 -->
+  <section id="project2">
+    <div id="project2-1">
+      <h2> digital publishing Design </h2>
+      <h3> </h3>
+      <div class="web-project">
+        <div class="wp-left">
+          <img src="img/web1.jpg">
+          <p> <a href="digital.pdf" target="_blank" class="btn">  기획서 보기  </a>
+              <a href="https://daheeham-create.github.io/emons/index.html" target="_blank" class="btn"> Web site View  </a>
+          </p>
+        </div>
+        <div class="wp-right">
+          <h3>Web page Publishing</h3>
+          <p> <b> Period </b>: 2026. 04. 28 </p>
+          <p> <b> Type :</b> html file </p>
+          <p> <b> Output :</b> photoshop, html, css </p>
+          <p> <b> OVERVIEW :</b></p>
+          <p> 사람은 공간을, 공간은 사람을 닮아갑니다. 가구에 진심을 담아 브랜드를 운영하는 emons,
+            '휴식'이라는 슬로건으로 트렌디한 디자인, 견고한 품질, 친환경의 좋은가구의 정신을 사이트에 담아보았습니다.</p>
+        </div>
+      </div>
+    </div>
+    <div id="project2-2">
+      <h2>Shoppingmall Design</h2>
+      <h3> </h3>
+      <div class="web-project">
+        <div class="wp-left">
+          <img src="img/web2.jpg">
+          <p> <a href="shoppingmall.pdf" target="_blank" class="btn">  기획서 보기  </a>
+              <a href="https://dbgn1990.cafe24.com" target="_blank" class="btn"> Shoppingmal View </a>
+          </p>
+        </div>
+        <div class="wp-right">
+          <h3>Cafe24 Shoppingmal Edit </h3>
+          <p> <b> Period </b>: 2026. 04. 28 </p>
+          <p> <b> Type :</b> web </p>
+          <p> <b> Output :</b> cafe24, photoshop </p>
+          <p> <b> OVERVIEW :</b></p>
+          <p> 좋은재료로 커피와 음료를 만들어내는 노력, 진정한 힐링을 위해 운영하는 The Ham,
+            '힐링'이라는 슬로건으로 더함의 정신을 사이트에 담아보았습니다.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+    <!-- 연락처 섹션 -->
+    <footer id="contact">
+      <p>© 2026 My Portfolio | 이메일: daheeham@google.com</p>
+      <ul class="social-links">
+        <li><a href="#">Phone</a></li>
+        <li><a href="#">GitHub</a></li>
+        <li><a href="#">Instagram</a></li>
+      </ul>
+    </footer>
+    
+    <!-- 모달 창 -->
+    <div id="modal" class="modal" onclick="closeModalOnOutside(event)">
+      <div class="modal-content">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <div id="modal-body"></div>
+      </div>
+    </div>
+    <script src="modal.js"></script>
+  </body>
+</html>
